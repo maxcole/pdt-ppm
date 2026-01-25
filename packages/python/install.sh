@@ -1,4 +1,4 @@
-# opentofu
+# python
 
 dependencies() {
   echo "mise"
@@ -6,5 +6,5 @@ dependencies() {
 
 post_install() {
   source <(mise activate bash)
-  mise install opentofu
+  mise install python uv
 }
