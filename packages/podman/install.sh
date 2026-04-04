@@ -5,7 +5,7 @@ install_linux() {
 }
 
 install_macos() {
-  install_dep podman podman-compose
+  install_dep podman podman-compose vfkit
 
   if ! podman machine list --format "{{.Name}}" | grep -q "podman-machine-default"; then
     podman machine init
